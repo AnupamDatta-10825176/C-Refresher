@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using dotnet_refresher.UtilitieClasses;
 using dotnet_refresher.UtilitieClasses.Interfaces;
 
@@ -23,6 +24,10 @@ namespace dotnet_refresher
             string filePath = Path.Combine(dirFinalPath, fileName);
             string fileContent = @"Test data inside test file";
             utilities.WriteIntoFile(filePath, fileContent);
+
+            // Read file content
+            fileContent = utilities.GetFileContent(filePath);
+            Console.WriteLine(fileContent);
         }
     }
 }

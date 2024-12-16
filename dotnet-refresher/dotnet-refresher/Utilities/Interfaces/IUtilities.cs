@@ -22,5 +22,12 @@
         /// <param name="path">Location of the existing file.</param>
         /// <param name="content">Data to write in the file.</param>
         void WriteIntoFile(string path, string content);
+
+        /// <summary>
+        /// Returns the content of the file.
+        /// </summary>
+        /// <param name="path">Location of the file.</param>
+        /// <returns>content of the file.</returns>
+        string GetFileContent(string path);
     }
 }

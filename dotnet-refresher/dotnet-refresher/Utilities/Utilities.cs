@@ -25,6 +25,11 @@ namespace dotnet_refresher.UtilitieClasses
             // Write inside a file.
             File.AppendAllText(path, content);
         }
+
+        public string GetFileContent(string path)
+        {
+            return File.ReadAllText(path);            
+        }
     }
 }
 
