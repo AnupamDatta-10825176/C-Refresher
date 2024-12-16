@@ -7,6 +7,20 @@
         /// </summary>
         /// <param name="path">location where the new directory will get created.</param>
         /// <param name="dirName">Name of the new directory/folder</param>
-        void CreateFolder(string path, string dirName);
+        string CreateFolder(string path, string dirName);
+
+        /// <summary>
+        /// Creates  a new text file in a specified path.
+        /// </summary>
+        /// <param name="path">location where the new file will get created.</param>
+        /// <param name="fileName">Name of the new text file</param>
+        void CreateTextFile(string path, string fileName);
+
+        /// <summary>
+        /// Write inside an existing file.
+        /// </summary>
+        /// <param name="path">Location of the existing file.</param>
+        /// <param name="content">Data to write in the file.</param>
+        void WriteIntoFile(string path, string content);
     }
 }

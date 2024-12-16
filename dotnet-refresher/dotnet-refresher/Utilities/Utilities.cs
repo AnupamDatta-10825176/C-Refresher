@@ -1,5 +1,5 @@
-﻿using dotnet_refresher.UtilitieClasses.Interfaces;
-using System.IO;
+﻿using System.IO;
+using dotnet_refresher.UtilitieClasses.Interfaces;
 
 namespace dotnet_refresher.UtilitieClasses
 {
@@ -8,10 +8,22 @@ namespace dotnet_refresher.UtilitieClasses
         public Utilities()
         { }
 
-        public void CreateFolder(string path, string dirName)
+        public string CreateFolder(string path, string dirName)
         {
             // Create the folder/directory
-            Directory.CreateDirectory(Path.Combine(path, dirName));
+            return Directory.CreateDirectory(Path.Combine(path, dirName)).FullName;
+        }
+
+        public void CreateTextFile(string path, string fileName)
+        {
+            // Create new text file
+            File.Create(Path.Combine(path, fileName)).Close();
+        }
+
+        public void WriteIntoFile(string path, string content)
+        {
+            // Write inside a file.
+            File.AppendAllText(path, content);
         }
     }
 }
