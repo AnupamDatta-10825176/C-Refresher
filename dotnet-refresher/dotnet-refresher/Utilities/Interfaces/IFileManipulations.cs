@@ -1,6 +1,6 @@
 ﻿namespace dotnet_refresher.UtilitieClasses.Interfaces
 {
-    public interface IUtilities
+    public interface IFileManipulations
     {
         /// <summary>
         /// Creates a new directory into a specified path with the given directory name.

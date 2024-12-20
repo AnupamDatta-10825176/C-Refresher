@@ -9,7 +9,7 @@ namespace dotnet_refresher
     {
         static void Main(string[] args)
         {
-            IUtilities utilities = new Utilities();
+            UtilitieClasses.Interfaces.IFileManipulations utilities = new UtilitieClasses.FileManipulations();
 
             // Create a new folder
             string dirPath = @"C:\Users\10825176\OneDrive - LTIMindtree\Desktop";
