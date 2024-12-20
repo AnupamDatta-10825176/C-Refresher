@@ -3,9 +3,9 @@ using dotnet_refresher.UtilitieClasses.Interfaces;
 
 namespace dotnet_refresher.UtilitieClasses
 {
-    public class Utilities : IUtilities
+    public class FileManipulations : IFileManipulations
     {
-        public Utilities()
+        public FileManipulations()
         { }
 
         public string CreateFolder(string path, string dirName)
